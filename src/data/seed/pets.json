@@ -1,0 +1,580 @@
+[
+  {
+    "id": "pet-rocco",
+    "name": "Rocco",
+    "species": "perro",
+    "breed": "Mestizo",
+    "ageMonths": 36,
+    "sex": "macho",
+    "size": "mediano",
+    "description": "Rocco es tranquilo en casa y muy juguetón en el parque. Se lleva bien con otros perros y con niños grandes. Camina bien con correa y ya sabe sentarse y dar la pata.",
+    "photos": [
+      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": true,
+    "sterilized": true,
+    "status": "disponible",
+    "region": "Metropolitana",
+    "city": "Ñuñoa",
+    "addressHint": "Cerca de Plaza Ñuñoa",
+    "lat": -33.4569,
+    "lng": -70.5976,
+    "contact": {
+      "name": "Refugio Patitas Felices",
+      "phone": "+56 9 4521 7788",
+      "whatsapp": "+56 9 4521 7788",
+      "email": "patitas@example.com",
+      "preferred": "whatsapp",
+      "availability": "Lunes a sábado, 10:00 a 19:00"
+    },
+    "logistics": {
+      "mode": "ambos",
+      "notes": "Podemos llevarlo dentro de Santiago. Si lo retiras, trae una correa."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-10-02T14:00:00.000Z",
+    "updatedAt": "2026-10-02T14:00:00.000Z"
+  },
+  {
+    "id": "pet-luna",
+    "name": "Luna",
+    "species": "gato",
+    "breed": "Doméstica de pelo corto",
+    "ageMonths": 14,
+    "sex": "hembra",
+    "size": "pequeno",
+    "description": "Luna es curiosa y cariñosa. Le encanta mirar por la ventana y dormir al sol. Usa su arenero sin problemas y convive bien con otra gata adulta.",
+    "photos": [
+      "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": true,
+    "sterilized": true,
+    "status": "disponible",
+    "region": "Metropolitana",
+    "city": "Santiago",
+    "addressHint": "Barrio Lastarria",
+    "lat": -33.4378,
+    "lng": -70.6385,
+    "contact": {
+      "name": "Camila Rojas",
+      "phone": "+56 9 6123 4401",
+      "whatsapp": "+56 9 6123 4401",
+      "email": "camila.rojas@example.com",
+      "preferred": "whatsapp",
+      "availability": "Tardes después de las 18:00"
+    },
+    "logistics": {
+      "mode": "retiro",
+      "notes": "Retiro en departamento. Trae un transportador para gatos."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-10-05T16:30:00.000Z",
+    "updatedAt": "2026-10-05T16:30:00.000Z"
+  },
+  {
+    "id": "pet-toby",
+    "name": "Toby",
+    "species": "perro",
+    "breed": "Pug",
+    "ageMonths": 60,
+    "sex": "macho",
+    "size": "pequeno",
+    "description": "Toby es un pug adulto que busca una casa tranquila. Le gustan las siestas largas y los paseos cortos. Necesita controles periódicos por su respiración, pero está sano.",
+    "photos": [
+      "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": true,
+    "sterilized": true,
+    "status": "disponible",
+    "region": "Valparaíso",
+    "city": "Viña del Mar",
+    "addressHint": "Sector Recreo",
+    "lat": -33.0275,
+    "lng": -71.5519,
+    "contact": {
+      "name": "Fundación Huellas del Puerto",
+      "phone": "+56 32 245 6612",
+      "whatsapp": "+56 9 7788 1203",
+      "email": "huellas@example.com",
+      "preferred": "telefono",
+      "availability": "Lunes a viernes, 9:00 a 17:00"
+    },
+    "logistics": {
+      "mode": "ambos",
+      "notes": "Entregamos en Viña y Valparaíso. Para otras ciudades lo conversamos."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-10-06T12:10:00.000Z",
+    "updatedAt": "2026-10-06T12:10:00.000Z"
+  },
+  {
+    "id": "pet-canela",
+    "name": "Canela",
+    "species": "perro",
+    "breed": "Golden retriever mestiza",
+    "ageMonths": 24,
+    "sex": "hembra",
+    "size": "grande",
+    "description": "Canela tiene mucha energía y ama el agua. Ideal para una familia activa con patio. Es muy sociable con personas y aprende rápido.",
+    "photos": [
+      "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1552053831-71594a27632d?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": true,
+    "sterilized": false,
+    "status": "en_proceso",
+    "region": "Biobío",
+    "city": "Concepción",
+    "addressHint": "Cerca del Parque Ecuador",
+    "lat": -36.8277,
+    "lng": -73.0498,
+    "contact": {
+      "name": "Diego Fuentes",
+      "phone": "+56 9 5310 2290",
+      "whatsapp": "+56 9 5310 2290",
+      "email": "diego.fuentes@example.com",
+      "preferred": "whatsapp",
+      "availability": "Fines de semana"
+    },
+    "logistics": {
+      "mode": "retiro",
+      "notes": "Se entrega con su cama, correa y un saco de alimento."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-09-28T10:00:00.000Z",
+    "updatedAt": "2026-10-12T09:45:00.000Z"
+  },
+  {
+    "id": "pet-milo",
+    "name": "Milo",
+    "species": "gato",
+    "breed": "Atigrado",
+    "ageMonths": 4,
+    "sex": "macho",
+    "size": "pequeno",
+    "description": "Milo es un gatito juguetón que persigue todo lo que se mueve. Fue rescatado con sus hermanos y ya come solo. Se entrega con compromiso de esterilización.",
+    "photos": [
+      "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": true,
+    "sterilized": false,
+    "status": "disponible",
+    "region": "Valparaíso",
+    "city": "Valparaíso",
+    "addressHint": "Cerro Alegre",
+    "lat": -33.0428,
+    "lng": -71.6261,
+    "contact": {
+      "name": "Fundación Huellas del Puerto",
+      "phone": "+56 32 245 6612",
+      "whatsapp": "+56 9 7788 1203",
+      "email": "huellas@example.com",
+      "preferred": "whatsapp",
+      "availability": "Lunes a viernes, 9:00 a 17:00"
+    },
+    "logistics": {
+      "mode": "entrega",
+      "notes": "Lo llevamos a tu casa en la región de Valparaíso."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-10-10T18:20:00.000Z",
+    "updatedAt": "2026-10-10T18:20:00.000Z"
+  },
+  {
+    "id": "pet-nube",
+    "name": "Nube",
+    "species": "conejo",
+    "breed": "Belier",
+    "ageMonths": 10,
+    "sex": "hembra",
+    "size": "pequeno",
+    "description": "Nube es una coneja dócil que se deja tomar en brazos. Come heno, verduras frescas y pellets. Necesita un espacio seguro para correr un rato todos los días.",
+    "photos": [
+      "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": false,
+    "sterilized": true,
+    "status": "disponible",
+    "region": "Metropolitana",
+    "city": "Providencia",
+    "addressHint": "Metro Manuel Montt",
+    "lat": -33.4289,
+    "lng": -70.6193,
+    "contact": {
+      "name": "Valentina Soto",
+      "phone": "",
+      "whatsapp": "+56 9 8456 3321",
+      "email": "vale.soto@example.com",
+      "preferred": "whatsapp",
+      "availability": "Todos los días, 10:00 a 21:00"
+    },
+    "logistics": {
+      "mode": "ambos",
+      "notes": "Se entrega con su jaula y bebedero."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-10-08T11:00:00.000Z",
+    "updatedAt": "2026-10-08T11:00:00.000Z"
+  },
+  {
+    "id": "pet-kiwi",
+    "name": "Kiwi",
+    "species": "ave",
+    "breed": "Cotorra argentina",
+    "ageMonths": 30,
+    "sex": "macho",
+    "size": "pequeno",
+    "description": "Kiwi es sociable y conversador. Silba melodías y saluda cuando alguien llega. Busca una familia que pase tiempo en casa y le dé ratos fuera de la jaula.",
+    "photos": [
+      "https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": false,
+    "sterilized": false,
+    "status": "disponible",
+    "region": "Coquimbo",
+    "city": "La Serena",
+    "addressHint": "Avenida del Mar",
+    "lat": -29.9045,
+    "lng": -71.2489,
+    "contact": {
+      "name": "Jorge Araya",
+      "phone": "+56 9 3344 7810",
+      "whatsapp": "+56 9 3344 7810",
+      "email": "",
+      "preferred": "telefono",
+      "availability": "Mañanas, 9:00 a 13:00"
+    },
+    "logistics": {
+      "mode": "retiro",
+      "notes": "Se entrega con jaula grande y juguetes."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-10-01T15:00:00.000Z",
+    "updatedAt": "2026-10-01T15:00:00.000Z"
+  },
+  {
+    "id": "pet-olivia",
+    "name": "Olivia",
+    "species": "gato",
+    "breed": "Siamesa mestiza",
+    "ageMonths": 48,
+    "sex": "hembra",
+    "size": "pequeno",
+    "description": "Olivia es elegante y algo tímida al principio. Cuando toma confianza busca cariño y ronronea fuerte. Prefiere ser la única mascota de la casa.",
+    "photos": [
+      "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": true,
+    "sterilized": true,
+    "status": "disponible",
+    "region": "Los Lagos",
+    "city": "Puerto Montt",
+    "addressHint": "Sector Pelluco",
+    "lat": -41.4865,
+    "lng": -72.8938,
+    "contact": {
+      "name": "Refugio Sur Animal",
+      "phone": "+56 65 228 9034",
+      "whatsapp": "+56 9 6677 4512",
+      "email": "suranimal@example.com",
+      "preferred": "email",
+      "availability": "Lunes a viernes, 10:00 a 18:00"
+    },
+    "logistics": {
+      "mode": "retiro",
+      "notes": "Hacemos una visita previa al hogar antes de la entrega."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-09-25T13:40:00.000Z",
+    "updatedAt": "2026-09-25T13:40:00.000Z"
+  },
+  {
+    "id": "pet-bruno",
+    "name": "Bruno",
+    "species": "perro",
+    "breed": "Pastor alemán mestizo",
+    "ageMonths": 84,
+    "sex": "macho",
+    "size": "grande",
+    "description": "Bruno es un perro senior noble y protector. Ya no corre tanto, pero disfruta los paseos largos y tranquilos. Es ideal para un hogar adulto con espacio.",
+    "photos": [
+      "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": true,
+    "sterilized": true,
+    "status": "disponible",
+    "region": "Araucanía",
+    "city": "Temuco",
+    "addressHint": "Cerca del Cerro Ñielol",
+    "lat": -38.7359,
+    "lng": -72.5904,
+    "contact": {
+      "name": "Patricia Lagos",
+      "phone": "+56 9 4012 9987",
+      "whatsapp": "+56 9 4012 9987",
+      "email": "patricia.lagos@example.com",
+      "preferred": "whatsapp",
+      "availability": "Tardes, 15:00 a 20:00"
+    },
+    "logistics": {
+      "mode": "ambos",
+      "notes": "Entrega en Temuco y Padre Las Casas."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-10-03T09:30:00.000Z",
+    "updatedAt": "2026-10-03T09:30:00.000Z"
+  },
+  {
+    "id": "pet-mora",
+    "name": "Mora",
+    "species": "gato",
+    "breed": "Negra de pelo corto",
+    "ageMonths": 20,
+    "sex": "hembra",
+    "size": "pequeno",
+    "description": "Mora es independiente pero muy dulce. Le gustan los juguetes con plumas y dormir en mantas. Convive sin problemas con perros tranquilos.",
+    "photos": [
+      "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": true,
+    "sterilized": true,
+    "status": "en_proceso",
+    "region": "Metropolitana",
+    "city": "Maipú",
+    "addressHint": "Cerca de la Plaza de Maipú",
+    "lat": -33.5107,
+    "lng": -70.7572,
+    "contact": {
+      "name": "Refugio Patitas Felices",
+      "phone": "+56 9 4521 7788",
+      "whatsapp": "+56 9 4521 7788",
+      "email": "patitas@example.com",
+      "preferred": "whatsapp",
+      "availability": "Lunes a sábado, 10:00 a 19:00"
+    },
+    "logistics": {
+      "mode": "entrega",
+      "notes": "Entrega en toda la Región Metropolitana."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-09-30T17:00:00.000Z",
+    "updatedAt": "2026-10-14T10:20:00.000Z"
+  },
+  {
+    "id": "pet-simon",
+    "name": "Simón",
+    "species": "perro",
+    "breed": "Beagle mestizo",
+    "ageMonths": 8,
+    "sex": "macho",
+    "size": "mediano",
+    "description": "Simón es un cachorro alegre con un olfato increíble. Está aprendiendo a hacer sus necesidades afuera. Necesita una familia paciente que le enseñe con cariño.",
+    "photos": [
+      "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": true,
+    "sterilized": false,
+    "status": "disponible",
+    "region": "Antofagasta",
+    "city": "Antofagasta",
+    "addressHint": "Sector sur, cerca del Balneario",
+    "lat": -23.6509,
+    "lng": -70.3975,
+    "contact": {
+      "name": "Andrea Muñoz",
+      "phone": "+56 9 2290 3345",
+      "whatsapp": "+56 9 2290 3345",
+      "email": "andrea.munoz@example.com",
+      "preferred": "whatsapp",
+      "availability": "Todos los días después de las 17:00"
+    },
+    "logistics": {
+      "mode": "retiro",
+      "notes": "Se entrega con carnet de vacunas al día."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-10-11T19:00:00.000Z",
+    "updatedAt": "2026-10-11T19:00:00.000Z"
+  },
+  {
+    "id": "pet-copito",
+    "name": "Copito",
+    "species": "conejo",
+    "breed": "Enano blanco",
+    "ageMonths": 18,
+    "sex": "macho",
+    "size": "pequeno",
+    "description": "Copito es tranquilo y curioso. Le gusta explorar y que le rasquen detrás de las orejas. Está acostumbrado a convivir con niños.",
+    "photos": [
+      "https://images.unsplash.com/photo-1535241749838-299277b6305f?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": false,
+    "sterilized": true,
+    "status": "disponible",
+    "region": "Maule",
+    "city": "Talca",
+    "addressHint": "Centro de Talca",
+    "lat": -35.4264,
+    "lng": -71.6554,
+    "contact": {
+      "name": "Ignacio Pérez",
+      "phone": "+56 9 7123 6654",
+      "whatsapp": "",
+      "email": "ignacio.perez@example.com",
+      "preferred": "email",
+      "availability": "Fines de semana, 11:00 a 18:00"
+    },
+    "logistics": {
+      "mode": "ambos",
+      "notes": "Puedo llevarlo en Talca. Incluye jaula y heno para dos semanas."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-10-07T14:15:00.000Z",
+    "updatedAt": "2026-10-07T14:15:00.000Z"
+  },
+  {
+    "id": "pet-frida",
+    "name": "Frida",
+    "species": "perro",
+    "breed": "Mestiza",
+    "ageMonths": 42,
+    "sex": "hembra",
+    "size": "mediano",
+    "description": "Frida fue rescatada de la calle y hoy es una perrita confiada y feliz. Le encanta jugar con pelotas y acompañar en el sofá. Se lleva bien con gatos.",
+    "photos": [
+      "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": true,
+    "sterilized": true,
+    "status": "disponible",
+    "region": "Metropolitana",
+    "city": "La Florida",
+    "addressHint": "Cerca de Metro Bellavista de La Florida",
+    "lat": -33.5226,
+    "lng": -70.5985,
+    "contact": {
+      "name": "Refugio Patitas Felices",
+      "phone": "+56 9 4521 7788",
+      "whatsapp": "+56 9 4521 7788",
+      "email": "patitas@example.com",
+      "preferred": "whatsapp",
+      "availability": "Lunes a sábado, 10:00 a 19:00"
+    },
+    "logistics": {
+      "mode": "ambos",
+      "notes": "Puedes conocerla antes en el refugio. Entregamos en Santiago."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-10-09T10:05:00.000Z",
+    "updatedAt": "2026-10-09T10:05:00.000Z"
+  },
+  {
+    "id": "pet-pancho",
+    "name": "Pancho",
+    "species": "gato",
+    "breed": "Naranjo atigrado",
+    "ageMonths": 72,
+    "sex": "macho",
+    "size": "mediano",
+    "description": "Pancho es un gato grande y bonachón. Pasa el día descansando y pide comida con un maullido suave. Busca un hogar tranquilo para sus años de calma.",
+    "photos": [
+      "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": true,
+    "sterilized": true,
+    "status": "adoptado",
+    "region": "Valparaíso",
+    "city": "Quilpué",
+    "addressHint": "Sector El Belloto",
+    "lat": -33.0472,
+    "lng": -71.4425,
+    "contact": {
+      "name": "Fundación Huellas del Puerto",
+      "phone": "+56 32 245 6612",
+      "whatsapp": "+56 9 7788 1203",
+      "email": "huellas@example.com",
+      "preferred": "telefono",
+      "availability": "Lunes a viernes, 9:00 a 17:00"
+    },
+    "logistics": {
+      "mode": "entrega",
+      "notes": "Ya encontró casa."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-09-15T12:00:00.000Z",
+    "updatedAt": "2026-10-16T16:00:00.000Z"
+  },
+  {
+    "id": "pet-maya",
+    "name": "Maya",
+    "species": "perro",
+    "breed": "Labrador mestiza",
+    "ageMonths": 15,
+    "sex": "hembra",
+    "size": "grande",
+    "description": "Maya es una perrita joven, cariñosa y obediente. Sabe caminar con correa y quedarse sola unas horas. Es perfecta para una familia que quiera salir a trotar.",
+    "photos": [
+      "https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": true,
+    "sterilized": true,
+    "status": "disponible",
+    "region": "Los Ríos",
+    "city": "Valdivia",
+    "addressHint": "Isla Teja",
+    "lat": -39.8099,
+    "lng": -73.2502,
+    "contact": {
+      "name": "Martina Vergara",
+      "phone": "+56 9 5567 2214",
+      "whatsapp": "+56 9 5567 2214",
+      "email": "martina.vergara@example.com",
+      "preferred": "whatsapp",
+      "availability": "Lunes a viernes después de las 18:00"
+    },
+    "logistics": {
+      "mode": "retiro",
+      "notes": "Se entrega con su plato, correa y arnés."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-10-13T09:00:00.000Z",
+    "updatedAt": "2026-10-13T09:00:00.000Z"
+  },
+  {
+    "id": "pet-mani",
+    "name": "Maní",
+    "species": "otro",
+    "breed": "Hámster sirio",
+    "ageMonths": 6,
+    "sex": "macho",
+    "size": "pequeno",
+    "description": "Maní es un hámster activo que corre en su rueda por las noches. Es manso y se deja tomar con cuidado. Necesita una jaula amplia y alguien que limpie su espacio cada semana.",
+    "photos": [
+      "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=1200&q=75&auto=format&fit=crop"
+    ],
+    "vaccinated": false,
+    "sterilized": false,
+    "status": "disponible",
+    "region": "Metropolitana",
+    "city": "Puente Alto",
+    "addressHint": "Cerca de la Plaza de Puente Alto",
+    "lat": -33.6117,
+    "lng": -70.5758,
+    "contact": {
+      "name": "Tomás Herrera",
+      "phone": "+56 9 6890 1123",
+      "whatsapp": "+56 9 6890 1123",
+      "email": "",
+      "preferred": "whatsapp",
+      "availability": "Todos los días, 12:00 a 20:00"
+    },
+    "logistics": {
+      "mode": "retiro",
+      "notes": "Se entrega con jaula, rueda y comida."
+    },
+    "createdBy": "user-admin",
+    "createdAt": "2026-10-15T20:00:00.000Z",
+    "updatedAt": "2026-10-15T20:00:00.000Z"
+  }
+]
