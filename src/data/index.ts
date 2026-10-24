@@ -1,4 +1,5 @@
 import { LocalAuthService } from './local/LocalAuthService'
+import { LocalFavoritesRepository } from './local/LocalFavoritesRepository'
 import { LocalPetRepository } from './local/LocalPetRepository'
 import type { Repositories } from './repositories/types'
 
@@ -14,5 +15,9 @@ export function createRepositories(source: DataSource = getDataSource()): Reposi
     // La implementación con Supabase llega en la Fase 2 (Task 11).
     throw new Error('VITE_DATA_SOURCE=supabase todavía no está disponible. Usa "local".')
   }
-  return { pets: new LocalPetRepository(), auth: new LocalAuthService() }
+  return {
+    pets: new LocalPetRepository(),
+    auth: new LocalAuthService(),
+    favorites: new LocalFavoritesRepository(),
+  }
 }

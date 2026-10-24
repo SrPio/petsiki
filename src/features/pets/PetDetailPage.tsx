@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/Button'
 import { buttonClasses } from '@/components/ui/button-styles'
 import { Skeleton } from '@/components/ui/Skeleton'
 import { useAuth } from '@/features/auth/auth-context'
+import { FavoriteButton } from '@/features/favorites/FavoriteButton'
 import { useFadeUp, useStagger } from '@/lib/motion'
 import type { Pet } from '@/lib/schemas/pet'
 import { ContactCard } from './components/ContactCard'
@@ -83,7 +84,15 @@ function PetDetail({ pet }: { pet: Pet }) {
               </Badge>
               <Badge tone="lavanda">{speciesLabel[pet.species]}</Badge>
             </div>
-            <h1 className="display mt-4 text-7xl md:text-8xl">{pet.name}</h1>
+            <div className="mt-4 flex items-end justify-between gap-4">
+              <h1 className="display text-7xl break-words md:text-8xl">{pet.name}</h1>
+              <FavoriteButton
+                petId={pet.id}
+                petName={pet.name}
+                size="lg"
+                className="mb-2 shrink-0"
+              />
+            </div>
             <p className="mt-3 text-lg text-tinta-suave">
               {[
                 pet.breed,

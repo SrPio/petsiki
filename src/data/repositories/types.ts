@@ -26,9 +26,17 @@ export interface AuthService {
   onChange(listener: (user: AuthUser | null) => void): () => void
 }
 
+/** Favoritos de cada usuario (ids de mascotas). */
+export interface FavoritesRepository {
+  list(userId: string): Promise<string[]>
+  add(userId: string, petId: string): Promise<void>
+  remove(userId: string, petId: string): Promise<void>
+}
+
 export type Repositories = {
   pets: PetRepository
   auth: AuthService
+  favorites: FavoritesRepository
 }
 
 export class NotFoundError extends Error {
