@@ -1,0 +1,39 @@
+import { cn } from '@/lib/cn'
+
+/** Placa de collar usada como isotipo. */
+export function PlacaIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 32 32" aria-hidden className={cn('size-8', className)}>
+      <g transform="rotate(-10 16 16)">
+        <rect
+          x="5"
+          y="4"
+          width="22"
+          height="25"
+          rx="9"
+          fill="#C4E38A"
+          stroke="#1F2742"
+          strokeWidth="2"
+        />
+        <circle cx="16" cy="9.5" r="2.2" fill="#EEF2F7" stroke="#1F2742" strokeWidth="1.6" />
+        <path
+          d="M11.5 22.5c0-1.6 2-3 4.5-3s4.5 1.4 4.5 3-1.4 3-4.5 3-4.5-1.4-4.5-3Z"
+          fill="#6A3EA1"
+        />
+        <circle cx="11.6" cy="18" r="1.4" fill="#6A3EA1" />
+        <circle cx="14.6" cy="16.4" r="1.4" fill="#6A3EA1" />
+        <circle cx="17.6" cy="16.4" r="1.4" fill="#6A3EA1" />
+        <circle cx="20.5" cy="18" r="1.4" fill="#6A3EA1" />
+      </g>
+    </svg>
+  )
+}
+
+export function Logo({ className }: { className?: string }) {
+  return (
+    <span className={cn('inline-flex items-center gap-2', className)}>
+      <PlacaIcon />
+      <span className="display text-[1.65rem] text-tinta">petsiki</span>
+    </span>
+  )
+}

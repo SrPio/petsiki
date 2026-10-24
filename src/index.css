@@ -1,12 +1,98 @@
 @import 'tailwindcss';
+@import '@fontsource-variable/bricolage-grotesque/standard.css';
 
-html,
-body,
-#root {
-  min-height: 100%;
+@theme {
+  --font-sans: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --color-nube: #eef2f7;
+  --color-tinta: #1f2742;
+  --color-tinta-suave: #4a5373;
+  --color-ciruela: #6a3ea1;
+  --color-ciruela-honda: #4e2a7e;
+  --color-lavanda: #e5dcf6;
+  --color-pistacho: #c4e38a;
+  --color-pistacho-hondo: #3f5a12;
+  --color-durazno: #ffc6a6;
+  --color-durazno-hondo: #7a3410;
+  --color-linea: #d6dce8;
+
+  --radius-placa: 1.75rem;
+  --radius-campo: 0.875rem;
+
+  --shadow-suave: 0 1px 2px rgb(78 42 126 / 0.06), 0 8px 24px -12px rgb(78 42 126 / 0.18);
+  --shadow-alta: 0 2px 4px rgb(78 42 126 / 0.08), 0 24px 48px -20px rgb(78 42 126 / 0.32);
+
+  --ease-suave: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
+@layer base {
+  html {
+    background: var(--color-nube);
+    color: var(--color-tinta);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    line-height: 1.6;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-ciruela);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  ::selection {
+    background: var(--color-pistacho);
+    color: var(--color-tinta);
+  }
+}
+
+@utility display {
+  font-weight: 800;
+  font-stretch: 78%;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+@utility titulo {
+  font-weight: 700;
+  font-stretch: 90%;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+@utility contenedor {
+  width: 100%;
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+
+  @media (width >= 48rem) {
+    padding-inline: 2.5rem;
+  }
+}
+
+@keyframes brillo {
+  from {
+    background-position: 150% 0;
+  }
+  to {
+    background-position: -50% 0;
+  }
+}
+
+@utility esqueleto {
+  background: linear-gradient(100deg, transparent 30%, rgb(255 255 255 / 0.65) 50%, transparent 70%)
+    var(--color-lavanda);
+  background-size: 200% 100%;
+  animation: brillo 1.6s var(--ease-suave) infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 }
