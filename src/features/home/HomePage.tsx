@@ -2,6 +2,7 @@ import { Link } from 'react-router'
 import { motion } from 'motion/react'
 import { buttonClasses } from '@/components/ui/button-styles'
 import { Skeleton } from '@/components/ui/Skeleton'
+import { useAuth } from '@/features/auth/auth-context'
 import { PetGrid } from '@/features/pets/components/PetGrid'
 import { usePets } from '@/features/pets/queries'
 import { useFadeUp, useStagger } from '@/lib/motion'
@@ -24,6 +25,7 @@ const steps = [
 
 export function HomePage() {
   const { data: pets, isPending, isError, refetch } = usePets({ status: 'disponible' })
+  const { user } = useAuth()
   const stagger = useStagger(0.08)
   const fadeUp = useFadeUp()
   const cityCount = new Set(pets?.map((p) => p.city)).size
@@ -49,9 +51,11 @@ export function HomePage() {
             <Link to="/mascotas" className={buttonClasses('primario', 'lg')}>
               Ver mascotas
             </Link>
-            <Link to="/ingresar" className={buttonClasses('secundario', 'lg')}>
-              Crear cuenta
-            </Link>
+            {!user && (
+              <Link to="/registro" className={buttonClasses('secundario', 'lg')}>
+                Crear cuenta
+              </Link>
+            )}
           </motion.div>
           <motion.p variants={fadeUp} className="mt-6 min-h-6 text-tinta-suave">
             {pets &&

@@ -2,11 +2,13 @@ import { NavLink } from 'react-router'
 import { motion } from 'motion/react'
 import { cn } from '@/lib/cn'
 import { springSuave } from '@/lib/motion'
-import { accountNav, mainNav } from '../navigation'
+import { useAuth } from '@/features/auth/auth-context'
+import { accountNav, adminNav, mainNav } from '../navigation'
 
 /** Navegación inferior, solo en móvil. */
 export function BottomNav() {
-  const items = [...mainNav, accountNav]
+  const { user, isAdmin } = useAuth()
+  const items = [...mainNav, ...(isAdmin ? [adminNav] : []), accountNav(Boolean(user))]
 
   return (
     <nav
@@ -14,7 +16,7 @@ export function BottomNav() {
       className="fixed inset-x-3 bottom-3 z-40 rounded-[1.75rem] bg-white/95 p-1.5 shadow-alta ring-1 ring-linea/70 backdrop-blur-md md:hidden"
       style={{ marginBottom: 'env(safe-area-inset-bottom)' }}
     >
-      <ul className="grid grid-cols-4">
+      <ul className={cn('grid', items.length === 5 ? 'grid-cols-5' : 'grid-cols-4')}>
         {items.map(({ to, label, icon: Icon, end }) => (
           <li key={to}>
             <NavLink

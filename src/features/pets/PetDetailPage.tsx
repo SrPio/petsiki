@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { buttonClasses } from '@/components/ui/button-styles'
 import { Skeleton } from '@/components/ui/Skeleton'
+import { useAuth } from '@/features/auth/auth-context'
 import { useFadeUp, useStagger } from '@/lib/motion'
 import type { Pet } from '@/lib/schemas/pet'
 import { ContactCard } from './components/ContactCard'
@@ -50,8 +51,8 @@ export function PetDetailPage() {
 function PetDetail({ pet }: { pet: Pet }) {
   const stagger = useStagger(0.07)
   const fadeUp = useFadeUp()
-  // TODO(Task 6): mostrar el contacto cuando haya sesión.
-  const locked = true
+  const { user } = useAuth()
+  const locked = !user
 
   return (
     <article className="contenedor">
