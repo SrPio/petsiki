@@ -6,22 +6,24 @@ Plataforma para adoptar mascotas de forma sencilla, hecha con React.
 
 ## Desarrollo local
 
+Requiere Node 24 y [pnpm](https://pnpm.io) 10.
+
 ```bash
-npm install
+pnpm install
 cp .env.example .env
-npm run dev
+pnpm dev
 ```
 
 ## Scripts
 
-| Script              | Qué hace               |
-| ------------------- | ---------------------- |
-| `npm run dev`       | Servidor de desarrollo |
-| `npm run build`     | Build de producción    |
-| `npm test`          | Tests con Vitest       |
-| `npm run lint`      | Lint con oxlint        |
-| `npm run typecheck` | Chequeo de tipos       |
-| `npm run format`    | Formatea con Prettier  |
+| Script           | Qué hace               |
+| ---------------- | ---------------------- |
+| `pnpm dev`       | Servidor de desarrollo |
+| `pnpm build`     | Build de producción    |
+| `pnpm test`      | Tests con Vitest       |
+| `pnpm lint`      | Lint con oxlint        |
+| `pnpm typecheck` | Chequeo de tipos       |
+| `pnpm format`    | Formatea con Prettier  |
 
 ## Licencia
 

@@ -3,7 +3,7 @@ node_modules
 coverage
 playwright-report
 test-results
-package-lock.json
+pnpm-lock.yaml
 skills-lock.json
 .kiro
 supabase/.temp

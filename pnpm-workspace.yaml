@@ -1,0 +1,4 @@
+# pnpm 10 bloquea los scripts de instalación por defecto.
+# El paquete `supabase` necesita su postinstall para descargar el binario del CLI.
+onlyBuiltDependencies:
+  - supabase
