@@ -3,6 +3,7 @@ import { AdminPage } from '@/features/admin/AdminPage'
 import { LoginPage } from '@/features/auth/LoginPage'
 import { FavoritesPage } from '@/features/favorites/FavoritesPage'
 import { HomePage } from '@/features/home/HomePage'
+import { PetDetailPage } from '@/features/pets/PetDetailPage'
 import { PetsPage } from '@/features/pets/PetsPage'
 import { RootLayout } from './layout/RootLayout'
 import { NotFoundPage } from './NotFoundPage'
@@ -23,6 +24,7 @@ export const routes: RouteObject[] = [
     children: [
       { index: true, element: <HomePage /> },
       { path: 'mascotas', element: <PetsPage /> },
+      { path: 'mascotas/:id', element: <PetDetailPage /> },
       { path: 'favoritos', element: <FavoritesPage /> },
       { path: 'ingresar', element: <LoginPage /> },
       { path: 'admin', element: <AdminPage /> },

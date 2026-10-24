@@ -96,3 +96,20 @@
     animation: none;
   }
 }
+
+/* Leaflet: integra el mapa con la estética de Petsiki */
+.leaflet-container {
+  font-family: var(--font-sans);
+  background: var(--color-lavanda);
+}
+
+.leaflet-control-zoom.leaflet-bar {
+  border: none;
+  box-shadow: var(--shadow-suave);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.leaflet-control-zoom a {
+  color: var(--color-tinta);
+}
