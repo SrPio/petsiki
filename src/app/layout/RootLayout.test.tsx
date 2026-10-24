@@ -6,7 +6,7 @@ describe('Layout y navegación', () => {
   it('muestra la home con el logo y la navegación principal', async () => {
     renderApp('/')
     expect(
-      await screen.findByRole('heading', { level: 1, name: 'Adopta a tu próxima compañía' }),
+      await screen.findByRole('heading', { level: 1, name: 'Alguien te está esperando' }),
     ).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Petsiki, inicio' })).toBeInTheDocument()
     expect(screen.getByRole('navigation', { name: 'Principal' })).toBeInTheDocument()

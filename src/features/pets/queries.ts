@@ -1,4 +1,4 @@
-import { useQuery } from '@tanstack/react-query'
+import { keepPreviousData, useQuery } from '@tanstack/react-query'
 import { useRepositories } from '@/data/repositories-context'
 import type { PetFilters } from '@/lib/schemas/pet'
 
@@ -15,6 +15,7 @@ export function usePets(filters: PetFilters = {}) {
   return useQuery({
     queryKey: petKeys.list(filters),
     queryFn: () => pets.list(filters),
+    placeholderData: keepPreviousData,
   })
 }
 

@@ -31,6 +31,31 @@ export function getFadeUp(reduced: boolean): Variants {
     : { hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: springSuave } }
 }
 
+/** Tarjetas de una grilla: entran escalonadas según su índice (`custom`). */
+export function getCardVariants(reduced: boolean): Variants {
+  if (reduced) {
+    return {
+      hidden: { opacity: 0 },
+      show: { opacity: 1, transition: { duration: 0.15 } },
+      exit: { opacity: 0, transition: { duration: 0.1 } },
+    }
+  }
+  return {
+    hidden: { opacity: 0, y: 20, scale: 0.98 },
+    show: (i: number = 0) => ({
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: { ...springSuave, delay: Math.min(i, 8) * 0.05 },
+    }),
+    exit: { opacity: 0, scale: 0.96, transition: { duration: 0.18 } },
+  }
+}
+
+export function useCardVariants() {
+  return getCardVariants(useReducedMotion() ?? false)
+}
+
 /** Contenedor que escalona la entrada de sus hijos. */
 export function getStagger(reduced: boolean, delay = 0.06): Variants {
   return { hidden: {}, show: { transition: { staggerChildren: reduced ? 0 : delay } } }
